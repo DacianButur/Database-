@@ -33,60 +33,7 @@ foreign key(idClient) references client(IdClient) on delete set null
 );
 
 Dupa care populam tabelele prin comenzile de insert --> 
--- insert for category table
-insert into category values (1,'Anabolizante');
-insert into category values(2,'Antibiotice');
-insert into category values(3,'Vitamine');
-insert into category values(4,'Analgezice');
 
--- insert for products table
-insert into product values(5,'Ketonal',4,15);
-insert into product values(6,'Trenbolone',1,100);
-insert into product values(7,'Anavar',1,500);
-insert into product values(8,'Dihidroxi-Steron',1,90);
-insert into product values(9,'HGH',1,1000);
-insert into product values(10,'Vit.K',3,89);
-insert into product values(11,'Vit.C',3,34);
-insert into product values(12,'Vit,D3',3,76);
-insert into product values(13,'Indometacin',2,48);
-insert into product values(14,'Ketoprofen',4,46);
-insert into product values(15,'Piroxicam',4,15);
-insert into product values(16,'Augumentin',2,80);
-insert into product values(17,'Clavamox',2,150);
-insert into product values(18,'Oxacilina',2,100);
-
--- insert for client table
-insert into client values(200,'Farmacia_Dona');
-insert into client values(300,'Farmacia_Vlad');
-insert into client values(400,'Farmacia_Dacia');
-insert into client values(500,'Farmacia_Help_Net');
-
-
--- insert for order table
-insert into orders values(1,8,200,'2021-01-14',15);
-insert into orders values(2,13,300,'2021-02-02',25);
-insert into orders values(4,14,300,'2021-01-15',150);
-insert into orders values(3,10,500,'2021-01-18',250);
-insert into orders values(4,15,400,'2021-02-19',300);
-insert into orders values(2,16,200,'2021-08-22',350);
-insert into orders values(2,17,300,'2021-02-12',150);
-insert into orders values(2,18,200,'2021-02-11',250);
-insert into orders values(3,12,300,'2021-04-29',150);
-insert into orders values(4,14,300,'2021-03-12',10);
-insert into orders values(2,15,200,'2021-12-30',15);
-insert into orders values(3,12,200,'2021-02-21',400);
-insert into orders values(3,12,400,'2021-05-14',500);
-insert into orders values(4,15,200,'2021-02-12',15);
-insert into orders values(1,7,300,'2021-08-26',25);
-insert into orders values(1,6,200,'2021-08-01',49);
-insert into orders values(1,9,200,'2021-03-14',77);
-insert into orders values(3,11,500,'2021-07-12',66);
-insert into orders values(2,11,200,'2021-12-09',33);
-insert into orders values(3,12,200,'2021-08-12',334);
-insert into orders values(4,13,200,'2021-07-25',112);
-insert into orders values(1,9,200,'2021-02-15',10);
-insert into orders values(1,9,300,'2021-03-13',24);
-insert into orders values(2,18,300,'2021-09-24',15);
  
  Dupa aceea vom face selecturile pentru a afla informatiile necesare -->
  -- select pentru cerinta nr.1
