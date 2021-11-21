@@ -36,7 +36,9 @@ Dupa care populam tabelele prin comenzile de insert -->
 
  
  Dupa aceea vom face selecturile pentru a afla informatiile necesare -->
- -- select pentru cerinta nr.1
+  -- select pentru cerinta nr.1
+
+
 -- select ca sa aflam nr-ul de comenzi din luna august a farmaciei dona si valoare lor medie + valoarea absoluta
 select orders.idClient,orders.date, orders.idProduct,product.price,orders.productUnits,client.clientName, orders.productUnits * product.price as totalPrice from orders join product on orders.idProduct = product.idProduct join client on orders.idClient = client.idClient where orders.idClient = 200 and month(date) = 08;
 
